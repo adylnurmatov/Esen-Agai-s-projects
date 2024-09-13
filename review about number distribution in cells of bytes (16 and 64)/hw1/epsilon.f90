@@ -1,6 +1,6 @@
 program machine_epsilon
   implicit none
-  real :: epsilon, one_plus_epsilon  
+  real(8) :: epsilon, one_plus_epsilon  
   integer :: iterations              
 
 
@@ -12,7 +12,7 @@ program machine_epsilon
 
 
     if (one_plus_epsilon > 1.0) then
-      epsilon = epsilon / 2.0       
+      epsilon = epsilon / 10.0       
       iterations = iterations + 1     
     else
       exit                          

@@ -5,7 +5,6 @@ program machine_infinity
 
   I = 1.0
   iterations = 0
-
   do
     two_times_I = 2.0 * I 
 
